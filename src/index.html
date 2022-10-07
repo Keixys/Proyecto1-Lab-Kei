@@ -6,9 +6,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+
+
+      <div id="root">
+        <h1 class="tittle">Cifra tu mensaje</h1>
+       </div>
+       <main>
+
+<div>
+ <form id="">
+  
+  <input type="text" placeholder="Ingresa texto" id="ingresoText" >  
+
+  <input type="range" id="desplazamiento" value="10" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+  <output>10</output>
+  
+  <input type="text" id="saletext" placeholder="Aqui veras tu mensaje cifrado">
+</form> 
+</div>
+
+
+<button type="button" id="cifrarboton">Cifrar</button>
+<button type="button" id="descifrarboton0">Descifrar</button>
+</main>
     <script src="index.js" type="module"></script>
   </body>
 </html>
