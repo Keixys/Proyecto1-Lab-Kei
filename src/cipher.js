@@ -19,7 +19,8 @@ const cipher = {
       if (valorxletra >= 65 && valorxletra <= 90) {
 
         //entra la formula
-        return resultado (((valorxletra - 65 + desplazamiento) % 26) + 65);
+        console.log(((valorxletra - 65 + desplazamiento) % 26 + 65) )
+       resultado += String.fromCharCode(((valorxletra - 65 + desplazamiento) % 26 + 65) );
         
       }
 
@@ -30,6 +31,8 @@ const cipher = {
 
       }
     }
+    console.log(resultado)
+  return resultado
   
   }
 
