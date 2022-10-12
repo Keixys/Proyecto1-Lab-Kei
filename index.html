@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+      <div id="root">
+        <h1>CODIFY</h1>
+       </div>
+       <main>
+
+<div>
+ <form id="">
+  
+  <h2>Desplaza la cantidad de numeros que quieras cifrar o descifrar tu mensaje</h2>
+  
+  <div id="selector">
+  <input type="range" id="desplazamiento" value="10" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+  <output>10</output>
+</div>
+
+  <div id="contenedores">
+    <textarea name="text" id="ingresoText" placeholder="Ingresa mensaje a cifrar" cols="40" rows="20"></textarea>
+
+  <textarea name="textcifrar" id="textsale" placeholder="Ingresa mensaje para descifrar" cols="40" rows="20"></textarea><br>
+ 
+</div>
+
+<button type="button" id="cifrarboton">CIFRAR</button>
+<button type="button" id="descifrarboton0">DESCIFRAR</button>
+
+</form> 
+</div>
+<h2> INSTRUCCIONES CIFRAR</h2>
+<img src="cifrar.jpg">
+
+<h2>INSTRUCCIONES DESCIFRAR</h2>
+<img src="descifrar.jpg">
+
+</main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
